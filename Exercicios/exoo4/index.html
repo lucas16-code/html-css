@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Flamengo.icon.png" type="image/x-icon">
-    <title>Teste com icon</title>
-</head>
+<html>
 <body>
-<h1>Olha o icon em cima</h1>
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// Change a property:
+car.color = "red";
+
+// Add a property:
+car.owner = "Johnson";
+
+// Display the property:
+document.getElementById("demo").innerHTML = "Car owner is " + car.owner +  car.color; 
+</script>
+
 </body>
 </html>
